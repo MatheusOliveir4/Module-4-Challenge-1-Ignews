@@ -1,1 +1,95 @@
-// TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.content {
+  max-width: 720px;
+  margin: 5rem auto 0;
+
+  h1 {
+    color: var(--gray-100);
+    line-height: 1.5;
+    font-size: 2.7rem;
+    margin: 4rem 0 2rem;
+  }
+
+  .postInformationContent {
+    display: flex;
+    align-items: center;
+    
+    margin-top: 1rem;
+    font-size: 0.8rem;
+
+    time {
+      margin: 0 0.8rem;
+    }
+
+    p {
+      margin: 0 0.8rem;
+      line-height: 0;
+    }
+
+  }
+
+  .editedDataPost {
+    font-style: italic;
+  }
+
+  div > h1 {
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  p {
+    margin-top: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+  }
+
+  div:last-child {
+    margin-bottom: 5rem;
+  }
+
+  .postNavegation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(196, 196, 196, 0.3);
+    padding-top: 5rem;
+
+    a {
+      display: block;
+
+      &:hover {
+        strong {
+          color: #eba417;
+        }
+      }
+
+      &:last-child > p {
+        text-align: right;
+      }
+      
+      strong {
+        display: block;
+        font-size: 1.3rem;
+        transition: color 0.3s;
+      }
+
+      p {
+        color: var(--pink);
+        font-weight: 600;
+        margin-top: 0.5rem;
+      }
+    }
+
+
+  }
+}
